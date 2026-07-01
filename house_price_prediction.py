@@ -6,4 +6,20 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-house = pd.read_csv("/data/train.csv")
+house = pd.read_csv("data/train.csv")
+
+house.head()
+house.shape
+
+house.info()
+house.describe()
+
+plt.figure(figsize = (10, 6))
+
+sns.histplot(data = house, x= "SalePrice", bin= 30)
+
+plt.title("Distribution of House Sale Prices")
+plt.xlabel("Sale Price")
+plt.ylabel("Frequency")
+
+plt.show()
