@@ -37,6 +37,8 @@ plt.show()
 
 
 #Scatter plot
+
+#Overall Quality Vs Sale Price
 plt.figure(figsize = (8, 6))
 
 plt.scatter(data = house, x = "OverallQual", y = "SalePrice")
@@ -46,3 +48,15 @@ plt.xlabel("Overall Quality")
 plt.ylabel("Sale Price")
 
 plt.show()
+
+#Ground Living Area vs Sale Price
+plt.figure(figsize = (8,6))
+
+plt.scatter(data = house, x = "GrLivArea", y = "SalePrice")
+
+plt.title("Ground Living Area Vs Sale Price")
+plt.xlabel("Ground Living Area")
+plt.ylabel("Sale Price")
+
+plt.show()
+
