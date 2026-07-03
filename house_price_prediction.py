@@ -34,3 +34,15 @@ plt.boxplot(x= house["SalePrice"])
 plt.title("Box Plot of Sale Price")
 
 plt.show()
+
+
+#Scatter plot
+plt.figure(figsize = (8, 6))
+
+plt.scatter(data = house, x = "OverallQual", y = "SalePrice")
+
+plt.title("Overall Quality vs Sale Price")
+plt.xlabel("Overall Quality")
+plt.ylabel("Sale Price")
+
+plt.show()
